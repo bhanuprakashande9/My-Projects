@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+   button{
+    color: white;
+    background-color: brown;
+width: 300px;
+height:50px;
+border-radius: 10px;
+font-size: 25px;
+
+
+
+   }
+
+   .clickonoff{
+
+
+    background-color: yellow;
+    height: 550px;
+    width: 96vw;
+    content: "Joe's Task: ";
+   }
+
+   .divclass{
+    align-items: center;
+    height: 550px;
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    margin: auto;
+   }
+
+
+ 
+        
+    </style>
+   
+
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+        
+<div class="onoff-button divclass">
+   
+    <button class="onoff-button" onclick=" 
+        
+    if( document.querySelector('button').innerText == 'On') {
+     document.querySelector('button').innerText ='Off'
+     document.querySelector('.onoff-button').classList.add('clickonoff')
+    
+    }
+    else if( document.querySelector('button').innerText =='Off'){
+     document.querySelector('button').innerText = 'On'
+     document.querySelector('.onoff-button').classList.remove('clickonoff')
+    
+    }
+      ">On</button>
+
+</div>
+
+
+
+         
+
+
+
+
+    
+</body>
+</html>
