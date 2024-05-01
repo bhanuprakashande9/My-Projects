@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceGame</title>
+    <style>
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+        button{
+            padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-family: "OpenSans", sans-serif;
+  font-style:italic;
+  font-weight: bold;
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            
+        }
+        button:hover {background-color: #3e8e41}
+        button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+</head>
+<body>
+
+    
+<button onclick="game()">Click Here To Roll The Dice</button>
+
+
+    <script>
+        var computermove = '  '
+        function game(){
+ var randomnumber = Math.random()
+    console.log(randomnumber)
+    
+if(randomnumber>0.01  && randomnumber<=0.15){
+    computermove = '1'
+    document.querySelector('#name').innerHTML='Dice Num is-1'
+
+}
+else if(randomnumber>0.15 && randomnumber<=0.33){
+    computermove='2'
+    document.querySelector('#name').innerHTML='Dice Num is-2'
+}
+else if(randomnumber>0.33 && randomnumber<=0.50){
+    computermove='3'
+    document.querySelector('#name').innerHTML='Dice Num is-3'
+        }
+
+else if(randomnumber>0.50 && randomnumber<=0.66){
+    computermove='4'
+    document.querySelector('#name').innerHTML='Dice Num is-4'
+        }
+else if(randomnumber>0.66 && randomnumber<=0.86){
+    computermove='5'
+    document.querySelector('#name').innerHTML='Dice Num is-5'
+        }
+
+else{
+    computermove='6'
+    document.querySelector('#name').innerHTML='Dice Num is-6'
+}
+
+
+}
+    </script>
+
+<h1 id="name"></h1>
+</body>
+</html>
