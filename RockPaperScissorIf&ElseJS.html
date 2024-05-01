@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="
+ game()
+    
+if(computermove ==  'Rock') {
+    console.log(computermove)
+    alert('Tie !')
+}
+else if(computermove=='Scissor'){
+    console.log(computermove)
+    alert('Win !')
+}
+else if(computermove == 'Paper'){
+    console.log(computermove)
+    alert('Loose !')
+}
+    ">Rock</button>
+<button onclick="
+var randomnumber = Math.random()
+    console.log(randomnumber)
+    var computermove = '  '
+if(randomnumber>0.01  && randomnumber<=0.33){
+    computermove = 'Rock'
+}
+else if(randomnumber>0.33 && randomnumber<=0.66){
+    
+    computermove='Paper'
+}
+else{
+    console.log(computermove)
+    computermove='Scissor'
+}
+if(computermove ==  'Rock') {
+    console.log(computermove)
+    alert('Win!')
+}
+else if(computermove=='Scissor'){
+    console.log(computermove)
+    alert('Lose !')
+}
+else if(computermove == 'Paper'){
+    console.log(computermove)
+    alert('Tie !')
+}
+
+">Paper</button>
+<button onclick="
+var randomnumber = Math.random()
+    console.log(randomnumber)
+    var computermove = '  '
+if(randomnumber>0.01  && randomnumber<=0.33){
+    computermove = 'Rock'
+}
+else if(randomnumber>0.33 && randomnumber<=0.66){
+    computermove='Paper'
+}
+else{
+    computermove='Scissor'
+}
+if(computermove ==  'Rock') {
+    console.log(computermove) 
+    alert('Lose !')
+   
+}
+else if(computermove=='Scissor'){
+    console.log(computermove)
+    alert('Tie !')
+    
+}
+else if(computermove == 'Paper'){
+    console.log(computermove)
+    alert('Win!')
+   
+}
+">Scissor</button>
+    <script>
+        var computermove = '  '
+        function game(){
+ var randomnumber = Math.random()
+    console.log(randomnumber)
+    
+if(randomnumber>0.01  && randomnumber<=0.33){
+    computermove = 'Rock'
+}
+else if(randomnumber>0.33 && randomnumber<=0.66){
+    computermove='Paper'
+}
+else{
+    computermove='Scissor'
+}
+}
+    </script>
+</body>
+</html>
